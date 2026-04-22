@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Patos Caravana</title>
+</head>
+<body>
+
+    <header>
+
+        <h1 class="titulo">Patos Caravana</h1>
+
+        <section class="slogan">
+            <h2 class="subtitulo">
+                Conectando clientes e comerciantes em um só lugar
+            </h2>
+        </section>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <section class="card">
+
+                <h3 class="cardTitulo">Entrar na Plataforma</h3>
+
+                <form class="formulario">
+
+                    <div class="campo">
+                        <label for="email">E-mail</label><br>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div class="campo">
+                        <label for="senha">Senha</label><br>
+                        <input 
+                            type="password" 
+                            id="senha" 
+                            name="senha" 
+                            placeholder="Digite sua senha"
+                            required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div class="opcoes">
+                        <input 
+                            type="checkbox" 
+                            id="lembrar" 
+                            name="lembrar"
+                        >
+                        <label for="lembrar">Lembrar de mim</label>
+                    </div>
+
+                    <br>
+
+                    <div class="recuperarSenha">
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+
+                </form>
+
+                <br>
+
+                <a href="paginaInicial">
+
+                    <button class="fazerLogin">
+                        Entrar
+                    </button>
+
+                </a>
+
+                <section class="cadastrarConta">
+
+                    <p class="cta">
+                        Ainda não possui uma conta?
+                    </p>
+
+                    <div class="botoes">
+
+                        <a href="cadastroCliente.html">
+
+                            <button class="cadastrarCliente">
+                                Cadastrar-se como Cliente
+                            </button>
+
+                        </a>
+                        
+                        <a href="cadastroComerciante.html">
+
+                            <button class="cadastrarComerciante">
+                                Cadastrar-se como Comerciante
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

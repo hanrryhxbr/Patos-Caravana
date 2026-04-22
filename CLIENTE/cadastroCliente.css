@@ -18,6 +18,9 @@ header {
 
 h1 {
 
+    border-left: solid;
+    border-bottom: solid;
+    border-color: #0B132B;
     border-radius: 40px;
     padding: 16px 16px;
     background: #F59E0B;
@@ -53,7 +56,8 @@ form {
 
 button {
 
-    border-style: hidden;
+    border-left: solid #0B132B;
+    border-bottom: solid #0B132B;
     border-radius: 24px;
     cursor: pointer;
     padding: 8px 16px;
