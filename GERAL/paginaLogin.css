@@ -1,11 +1,11 @@
 body {
 
     margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: #0B132B;
     color: white;
-
 }
+
 
 header {
 
@@ -38,7 +38,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
+    background: linear-gradient(to top, #0B132B 5%, #34D399 5%, #0F766E 90%);
     padding: 40px;
     text-align: center;
 
@@ -65,27 +65,32 @@ main {
 
     display: flex;
     justify-content: center;
+    padding: 40px;
 
 }
 
-form {
+.container {
 
     display: flex;
-    margin: 48px;
-    padding: 40px;
-    border-radius: 4px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.card {
+
+    background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
     border-left: solid;
     border-bottom: solid;
     border-color: #F59E0B;
-    background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
+    border-radius: 8px;
+    padding: 40px;
     width: 420px;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;;
+    text-align: center;
 
 }
 
-h3 {
+.cardTitulo {
 
     margin-bottom: 30px;
     color: white;
@@ -93,21 +98,30 @@ h3 {
 
 }
 
-.inputField {
+.formulario {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
+}
+
+.campo {
 
     width: 100%;
     text-align: left;
 
 }
 
-.inputField label {
+.campo label {
 
     font-weight: bold;
     color: white;
 
 }
 
-.inputField input {
+.campo input {
 
     width: 94%;
     padding: 12px;
@@ -119,13 +133,33 @@ h3 {
 
 }
 
-.inputField#interesse {
+.opcoes {
 
     display: flex;
     align-items: center;
     gap: 8px;
     width: 100%;
     justify-content: flex-start;
+
+}
+
+.recuperarSenha {
+
+    width: 100%;
+    text-align: right;
+
+}
+
+.recuperarSenha a {
+    color: #F59E0B;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.recuperarSenha a:hover {
+
+    text-decoration: underline;
 
 }
 
@@ -149,5 +183,39 @@ button {
 button:hover {
 
     transform: scale(1.03);
+
+}
+
+.fazerLogin {
+
+    width: 180px;
+
+}
+
+.cadastrarConta {
+
+    margin-top: 40px;
+
+}
+
+.cta {
+
+    margin-bottom: 20px;
+    font-size: 15px;
+
+}
+
+.botoes {
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+}
+
+.cadastrarCliente, .cadastrarComerciante {
+
+    width: 260px;
 
 }
