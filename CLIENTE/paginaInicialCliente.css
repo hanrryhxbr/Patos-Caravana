@@ -1,0 +1,364 @@
+body {
+
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #0B132B;
+    color: white;
+
+}
+
+header {
+    
+    background: #0F766E;
+    padding: 16px 32px;
+
+}
+
+.headerContainer {
+    
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+
+    background: #F59E0B;
+    border-left: 3px solid #0B132B;
+    border-bottom: 3px solid #0B132B;
+    border-radius: 24px;
+    padding: 8px 16px;
+
+}
+
+.logo h1 {
+
+    margin: 0;
+    color: white;
+    font-size: 20px;
+
+}
+
+.menuRapido {
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.botaoNav {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+
+.botaoNavIcone {
+
+    font-size: 20px;
+
+}
+
+.busca {
+
+    background: linear-gradient(to bottom, #0F766E 0%, #34D399 100%);
+    padding: 32px 16px;
+
+}
+
+.buscaContainer {
+
+    width: 1280px;
+    margin: 0 auto;
+
+}
+
+.buscaTitulo {
+
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+
+}
+
+.barraDeBusca {
+
+    display: flex;
+    gap: 8px;
+    width: 672px;
+    margin: 0 auto;
+
+}
+
+.inputTexto {
+
+    flex: 1;
+    position: relative;
+
+}
+
+.buscaIcone {
+
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #777;
+
+}
+
+.inputTexto input {
+
+    width: 100%;
+    padding: 12px 12px 12px 48px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+.botaoFiltro {
+
+    background: #F59E0B;
+    border-left: 3px solid #0B132B;
+    border-bottom: 3px solid #0B132B;
+    border-top: none;
+    border-right: none;
+    color: white;
+    padding: 5px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    text-decoration: none;
+
+}
+
+.botaoFiltro:hover {
+
+    transform: scale(1.05);
+
+}
+
+.categorias {
+
+    padding: 24px 16px;
+
+}
+
+.categoriasContainer {
+
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.botaoCategoria {
+
+    background: #0F766E;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+
+}
+
+.botaoCategoria.ativo {
+
+    background: #F59E0B;
+    border-left: 3px solid #0B132B;
+    border-bottom: 3px solid #0B132B;
+    font-weight: bold;
+
+}
+
+.produtos {
+
+    padding: 32px 16px 80px;
+
+}
+
+.produtosContainer {
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.produtosHeader {
+
+    margin-bottom: 24px;
+
+}
+
+.produtosHeader h2 {
+
+    color: white;
+    margin: 0;
+    font-size: 20px;
+
+}
+
+.produtosBlocos {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+
+}
+
+.produtoCard {
+
+    background: linear-gradient(to bottom, #0F766E 0%, #34D399 100%);
+    border-left: 3px solid #F59E0B;
+    border-bottom: 3px solid #F59E0B;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+}
+
+.produtoCard:hover {
+
+    transform: scale(1.05);
+
+}
+
+.produtoIcone {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    padding: 32px;
+
+}
+
+.produtoInfo {
+
+    padding: 16px;
+
+}
+
+.produtoNome {
+
+    color: white;
+    margin: 0 0 8px 0;
+    font-size: 18px;
+
+}
+
+.produtoAvaliacao {
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+
+}
+
+.estrela {
+
+    color: #F59E0B;
+    font-size: 16px;
+
+}
+
+.produtoAvaliacao span {
+
+    color: white;
+    font-size: 14px;
+
+}
+
+.produtoEstabelecimento {
+
+    color: white;
+    font-size: 14px;
+    margin: 0 0 4px 0;
+    opacity: 0.9;
+
+}
+
+.produtoLocalizacao {
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+
+}
+
+.produtoLocalizacao span {
+
+    color: white;
+    font-size: 12px;
+    opacity: 0.8;
+
+}
+
+.produtoFooter {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.produtoPreco {
+
+    color: #F59E0B;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.botaoVerProduto {
+
+    background: #F59E0B;
+    border-left: 2px solid #0B132B;
+    border-bottom: 2px solid #0B132B;
+    border-top: none;
+    border-right: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    text-decoration: none;
+    display: inline-block;
+
+}
