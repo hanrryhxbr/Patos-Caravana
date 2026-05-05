@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="cadastroProduto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="titulo">
+            <h1>Patos Caravana</h1>
+        </div>
+
+        <!-- BOTÃO CORRETO -->
+        <button class="btnAdicionar" onclick="window.location.href='paginaInicialComerciante.html'">
+            ← Voltar
+        </button>
+    </header>
+
+    <div class="slogan">
+        <h2 class="subtitulo">
+            Divulgue seus produtos e serviços para toda a cidade
+        </h2>
+    </div>
+
+    <main>
+
+        <form>
+
+            <h3>Cadastrar Produto / Serviço</h3>
+
+            <div class="inputField">
+                <label>Nome do produto/serviço:</label>
+                <input type="text" placeholder="Ex: Pizza, Corte de cabelo..." required>
+            </div>
+
+            <div class="inputField">
+                <label>Descrição:</label>
+                <textarea placeholder="Descreva seu produto ou serviço"></textarea>
+            </div>
+
+            <div class="inputField">
+                <label>Categoria:</label>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="servicos">Serviços</option>
+                    <option value="varejo">Varejo</option>
+                </select>
+            </div>
+
+            <div class="inputField">
+                <label>Preço (R$):</label>
+                <input type="number" placeholder="Ex: 25.00" required>
+            </div>
+
+            <div class="inputField">
+                <label>Imagem do produto:</label>
+                <input type="file">
+            </div>
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

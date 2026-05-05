@@ -1,0 +1,174 @@
+body {
+
+    margin: 0;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    background: #0B132B;
+    color: white;
+
+}
+
+/* HEADER */
+header {
+
+    display: flex;
+    align-items: center;
+    background: #0F766E;
+    padding: 40px;
+    justify-content: center;
+    position: relative;
+
+}
+
+.titulo {
+
+    border-left: solid;
+    border-bottom: solid;
+    border-color: #0B132B;
+    border-radius: 80px;
+    padding: 16px;
+    background: #F59E0B;
+    width: 400px;
+    text-align: center;
+
+}
+
+/* BOTÃO TOPO */
+.btnAdicionar {
+
+    border-left: solid #0B132B;
+    border-bottom: solid #0B132B;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 12px 20px;
+    color: white;
+    background-color: #10B981;
+    border-top: none;
+    border-right: none;
+    font-weight: bold;
+    transition: 0.3s;
+    position: absolute;
+    right: 40px;
+    top: 20%;
+
+}
+
+.btnAdicionar:hover {
+
+    transform: scale(1.05);
+
+}
+
+/* SLOGAN */
+.slogan {
+
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
+    padding: 40px;
+
+}
+
+.subtitulo {
+
+    font-size: 18px;
+    border-left: solid;
+    border-bottom: solid;
+    border-color: #0B132B;
+    border-radius: 40px;
+    padding: 16px;
+    background: #F59E0B;
+    width: 800px;
+    text-align: center;
+
+}
+
+/* FORM */
+main {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px;
+    padding: 40px;
+    width: 420px;
+    row-gap: 16px;
+
+    border-left: solid;
+    border-bottom: solid;
+    border-color: #F59E0B;
+
+    background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
+}
+
+h3 {
+
+    margin-bottom: 30px;
+    font-size: 24px;
+
+}
+
+/* INPUTS */
+.inputField {
+
+    width: 100%;
+    text-align: left;
+
+}
+
+.inputField label {
+
+    font-weight: bold;
+
+}
+
+.inputField input,
+.inputField select,
+.inputField textarea {
+
+    width: 94%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+
+}
+
+textarea {
+
+    resize: none;
+    height: 80px;
+
+}
+
+/* BOTÃO CADASTRAR */
+form button {
+
+    border-left: solid #0B132B;
+    border-bottom: solid #0B132B;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #F59E0B;
+    border-top: none;
+    border-right: none;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+form button:hover {
+
+    transform: scale(1.03);
+
+}
