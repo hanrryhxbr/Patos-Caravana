@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Patos Caravana</title>
+    <link rel="stylesheet" href="paginaLojaInfos.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="headerContainer">
+
+            <div class="logo">
+                <h1>Patos Caravana</h1>
+            </div>
+
+            <nav class="menuRapido">
+
+                <a href="../CLIENTE/paginaInicialCliente.html" class="botaoNav">
+
+                    <span class="botaoNavIcone">🏠</span>
+                    <span class="navTexto">Início</span>
+
+                </a>
+
+                <a href="../CLIENTE/listagemLojas.html" class="botaoNav">
+
+                    <span class="botaoNavIcone">🛍️</span>
+                    <span class="navTexto">Lojas</span>
+
+                </a>
+
+                <a href="../GERAL/paginaLogin.html" class="botaoNav">
+
+                    <span class="botaoNavIcone">👤</span>
+                    <span class="navTexto">Entrar</span>
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="busca">
+
+        <div class="buscaContainer">
+
+            <h2 class="buscaTitulo">
+                Encontre lojas, produtos e serviços em Patos
+            </h2>
+
+            <div class="barraDeBusca">
+
+                <div class="inputTexto">
+
+                    <span class="buscaIcone">🔍</span>
+
+                    <input 
+                        type="text" 
+                        placeholder="Busque alguma loja ou produto..."
+                    >
+
+                </div>
+
+                <a href="#" class="botaoFiltro">
+
+                    <span class="botaoFiltroIcone">⚙️</span>
+                    <span class="filtroTexto">Filtros</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="categorias">
+
+        <div class="categoriasContainer">
+
+            <a href="#" class="botaoCategoria ativo">Todos</a>
+            <a href="#" class="botaoCategoria">Alimentos</a>
+            <a href="#" class="botaoCategoria">Eletrônicos</a>
+            <a href="#" class="botaoCategoria">Moda</a>
+            <a href="#" class="botaoCategoria">Serviços</a>
+            <a href="#" class="botaoCategoria">Beleza</a>
+            <a href="#" class="botaoCategoria">Saúde</a>
+
+        </div>
+
+    </section>
+
+    <main class="informacoes">
+
+        <div class="informacoesCard">
+
+            <div class="lojaConteudo">
+
+                <div class="lojaEsquerda">
+
+                    <div class="detalhesLojaContainer">
+
+                        <div class="imagemLoja">
+                            🖥️
+                        </div>
+
+                        <div class="avaliacao">
+
+                            <span class="estrela">⭐</span>
+                            <span>4.6 (523 avaliações)</span>
+
+                        </div>
+
+                        <div class="especificacoesLoja">
+
+                            <h4>
+                                Sobre a loja:
+                            </h4>
+
+                            <p>
+                                Loja especializada em eletrônicos,
+                                acessórios gamer, smartphones,
+                                periféricos e tecnologia em geral.
+                            </p>
+
+                            <p>
+                                Trabalhando desde 2021 no centro de Patos,
+                                oferecendo produtos nacionais e importados
+                                com garantia e suporte.
+                            </p>
+
+                            <h4>
+                                Principais categorias:
+                            </h4>
+
+                            <ul>
+
+                                <li>Smartphones</li>
+                                <li>Fones Bluetooth</li>
+                                <li>Computadores</li>
+                                <li>Acessórios Gamer</li>
+                                <li>Carregadores e Cabos</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="lojaDireita">
+
+                    <div class="infosCompraContainer">
+
+                        <h4 class="tituloLoja">
+                            Loja TechTudo
+                        </h4>
+
+                        <span class="opcoesLoja">
+                            Entrega disponível em alguns bairros
+                        </span>
+
+                        <div class="botoesAcoes">
+
+                            <button class="chatComVendedor">
+                                💬 Conversar com loja
+                            </button>
+
+                            <button class="verProdutos" onclick="location.href='#produtos'">
+                                📦 Ver produtos
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="perfilLojaContainer">
+
+                        <h4>
+                            Informações da Loja
+                        </h4>
+
+                        <div class="infosLoja">
+
+                            <span class="dataDeEntradaLoja">
+                                📅 Na plataforma desde 2024
+                            </span>
+
+                            <span class="localizacaoLoja">
+                                📍  Av. Principal • 1.5 km
+                            </span>
+                            <span class="avaliacaoLoja">
+                                ⭐ 4.6 de avaliação
+                            </span>
+
+                            <span class="horarioLoja">
+                                🕒 Aberto até 18:00
+                            </span>
+
+                            <button class="verLoja">
+                                Ver no mapa
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <section id="produtos">
+
+        <div class="produtosBlocos">
+
+            <div class="produtosHeader">
+
+                <h2>
+                    Produtos da loja
+                </h2>
+
+            </div>
+
+            <div class="produtosGrid">
+
+                <div class="produtoCard">
+
+                    <div class="produtoIcone">🎧</div>
+
+                    <div class="produtoInfo">
+
+                        <h5 class="produtoNome">
+                            Fone Bluetooth
+                        </h5>
+
+                        <div class="produtoAvaliacao">
+
+                            <span class="estrela">⭐</span>
+                            <span>4.6</span>
+
+                        </div>
+
+                        <p class="produtoEstabelecimento">
+                            TechTudo
+                        </p>
+
+                        <div class="produtoLocalizacao">
+
+                            <span>📍</span>
+                            <span>Av. Principal • 1.5 km</span>
+
+                        </div>
+
+                        <div class="produtoFooter">
+
+                            <p class="produtoPreco">
+                                R$ 150,00
+                            </p>
+
+                            <a href="../CLIENTE/produtoInfo.html" class="botaoVerProduto">
+                                Ver produto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="produtoCard">
+
+                    <div class="produtoIcone">⌨️</div>
+
+                    <div class="produtoInfo">
+
+                        <h5 class="produtoNome">
+                            Teclado Mecânico
+                        </h5>
+
+                        <div class="produtoAvaliacao">
+
+                            <span class="estrela">⭐</span>
+                            <span>4.7</span>
+
+                        </div>
+
+                        <p class="produtoEstabelecimento">
+                            TechTudo
+                        </p>
+
+                        <div class="produtoLocalizacao">
+
+                            <span>📍</span>
+                            <span>Av. Principal • 1.5 km</span>
+
+                        </div>
+
+                        <div class="produtoFooter">
+
+                            <p class="produtoPreco">
+                                R$ 220,00
+                            </p>
+
+                            <a href="../CLIENTE/produtoInfo.html" class="botaoVerProduto">
+                                Ver produto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="produtoCard">
+
+                    <div class="produtoIcone">🖱️</div>
+
+                    <div class="produtoInfo">
+
+                        <h5 class="produtoNome">
+                            Mouse Sem Fio
+                        </h5>
+
+                        <div class="produtoAvaliacao">
+
+                            <span class="estrela">⭐</span>
+                            <span>4.6</span>
+
+                        </div>
+
+                        <p class="produtoEstabelecimento">
+                            TechTudo
+                        </p>
+
+                        <div class="produtoLocalizacao">
+
+                            <span>📍</span>
+                            <span>Av. Principal • 1.5 km</span>
+
+                        </div>
+
+                        <div class="produtoFooter">
+
+                            <p class="produtoPreco">
+                                R$ 75,00
+                            </p>
+
+                            <a href="../CLIENTE/produtoInfo.html" class="botaoVerProduto">
+                                Ver produto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="produtoCard">
+
+                    <div class="produtoIcone">📱</div>
+
+                    <div class="produtoInfo">
+
+                        <h5 class="produtoNome">
+                            Smartphone Premium
+                        </h5>
+
+                        <div class="produtoAvaliacao">
+
+                            <span class="estrela">⭐</span>
+                            <span>4.8</span>
+
+                        </div>
+
+                        <p class="produtoEstabelecimento">
+                            TechTudo
+                        </p>
+
+                        <div class="produtoLocalizacao">
+
+                            <span>📍</span>
+                            <span>Av. Principal • 1.5 km</span>
+
+                        </div>
+
+                        <div class="produtoFooter">
+
+                            <p class="produtoPreco">
+                                R$ 1.899,00
+                            </p>
+
+                            <a href="../CLIENTE/produtoInfo.html" class="botaoVerProduto">
+                                Ver produto
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="comentarios">
+
+        <div class="comentariosHeaderContainer">
+
+            <h3 class="comentariosTitulo">
+                Avaliações da loja
+            </h3>
+
+            <div class="categoriasComentarioBloco">
+
+                <button class="botaoComentario ativo">
+                    Todos
+                </button>
+
+                <button class="botaoComentario">
+                    Positivos
+                </button>
+
+                <button class="botaoComentario">
+                    Negativos
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="comentariosContainer">
+
+            <div class="comentariosBloco">
+
+                <div class="comentarioCard">
+
+                    <div class="comentarioHeader">
+
+                        <h4 class="comentarioAutor">
+                            Lucas Ferreira
+                        </h4>
+
+                        <div class="estrelasComentarioContainer">
+
+                            <span class="estrelasComentario">
+                                ⭐⭐⭐⭐⭐
+                            </span>
+
+                            <span class="dataComentario">
+                                há 2 dias
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <p class="comentarioTexto">
+                        Loja muito organizada e atendimento excelente.
+                        Meu produto chegou antes do prazo.
+                    </p>
+
+                </div>
+
+                <div class="comentarioCard">
+
+                    <div class="comentarioHeader">
+
+                        <h4 class="comentarioAutor">
+                            Amanda Souza
+                        </h4>
+
+                        <div class="estrelasComentarioContainer">
+
+                            <span class="estrelasComentario">
+                                ⭐⭐⭐⭐
+                            </span>
+
+                            <span class="dataComentario">
+                                há 5 dias
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <p class="comentarioTexto">
+                        Bons preços e bastante variedade.
+                        Voltarei a comprar novamente.
+                    </p>
+
+                </div>
+
+                <div class="comentarioCard">
+
+                    <div class="comentarioHeader">
+
+                        <h4 class="comentarioAutor">
+                            Pedro Henrique
+                        </h4>
+
+                        <div class="estrelasComentarioContainer">
+
+                            <span class="estrelasComentario">
+                                ⭐⭐⭐⭐⭐
+                            </span>
+
+                            <span class="dataComentario">
+                                há 1 semana
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <p class="comentarioTexto">
+                        Atendimento rápido e suporte muito bom.
+                        Recomendo bastante essa loja.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
