@@ -1,11 +1,11 @@
 body {
 
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
     background: #0B132B;
     color: white;
-}
 
+}
 
 header {
 
@@ -38,7 +38,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, #0B132B 5%, #34D399 5%, #0F766E 90%);
+    background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
     padding: 40px;
     text-align: center;
 
@@ -47,7 +47,7 @@ header {
 .subtitulo {
 
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
     color: white;
     border-left: solid;
     border-bottom: solid;

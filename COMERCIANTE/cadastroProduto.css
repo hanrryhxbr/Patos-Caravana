@@ -11,11 +11,12 @@ body {
 header {
 
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: #0F766E;
     padding: 40px;
-    justify-content: center;
-    position: relative;
+    text-align: center;
 
 }
 
@@ -27,8 +28,8 @@ header {
     border-radius: 80px;
     padding: 16px;
     background: #F59E0B;
+    color: white;
     width: 400px;
-    text-align: center;
 
 }
 
@@ -48,7 +49,7 @@ header {
     transition: 0.3s;
     position: absolute;
     right: 40px;
-    top: 20%;
+    transform: translateY(-85%);
 
 }
 
@@ -62,23 +63,29 @@ header {
 .slogan {
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
     padding: 40px;
+    text-align: center;
 
 }
 
 .subtitulo {
 
     font-size: 18px;
+    font-weight: bold;
+    color: white;
     border-left: solid;
     border-bottom: solid;
     border-color: #0B132B;
     border-radius: 40px;
     padding: 16px;
     background: #F59E0B;
+    color: white;
     width: 800px;
-    text-align: center;
+
 
 }
 
@@ -93,18 +100,18 @@ main {
 form {
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 48px;
     padding: 40px;
-    width: 420px;
-    row-gap: 16px;
-
+    border-radius: 4px;
     border-left: solid;
     border-bottom: solid;
     border-color: #F59E0B;
-
     background: linear-gradient(to top, #34D399 5%, #0F766E 90%);
+    width: 420px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+
 }
 
 h3 {
@@ -140,6 +147,10 @@ h3 {
     outline: none;
     font-size: 14px;
 
+}
+
+.inputField select {
+    width: 100%;
 }
 
 textarea {

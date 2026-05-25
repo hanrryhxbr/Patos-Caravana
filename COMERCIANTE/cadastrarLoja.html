@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar empresa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastrarLoja.css">
+</head>
+
+<body>
+
+<header>
+    <div class="titulo">
+          <h1>Patos Caravana</h1>
+    </div>
+
+    <!-- BOTÃO CORRETO -->
+    <button class="btnAdicionar" onclick="window.location.href='paginaInicialComerciante.html'">
+        ← Voltar
+    </button>
+</header>
+
+    <div class="slogan">
+        <h2 class="subtitulo">
+            Divulgue seus produtos e serviços para toda a cidade
+        </h2>
+    </div>
+
+<main>
+
+<form action="listagemEmpresas.html">
+
+    <h3>Cadastrar Empresa</h3>
+
+    <!-- LOGO -->
+    <div class="inputField">
+        <label>Logo da empresa:</label>
+        <input type="file" accept="image/*" id="logoInput">
+        <img id="previewLogo" class="previewLogo"><br><br>
+    </div>
+
+    <!-- NOME -->
+    <div class="inputField">
+        <label>Nome da Empresa:</label>
+        <input type="text" required
+        placeholder="Digite o nome da sua empresa"><br><br>
+    </div>
+
+    <!-- CATEGORIA -->
+    <div class="inputField">
+        <label>Categoria:</label><br>
+        <select required>
+            <option>Restaurante</option>
+            <option>Loja</option>
+            <option>Serviço</option>
+            <option>Mercado</option>
+        </select><br><br>
+    </div>
+
+    <!-- TELEFONE -->
+    <div class="inputField">
+        <label>Telefone:</label>
+        <input type="tel" required
+        placeholder="Digite o telefone da sua empresa"><br><br>
+    </div>
+
+    <!-- ENDEREÇO -->
+    <div class="inputField">
+        <label>Endereço:</label>
+        <input type="text" placeholder="Rua, bairro, cidade..." required><br><br>
+    </div>
+
+    <!-- DESCRIÇÃO -->
+    <div class="inputField">
+        <label>Descrição:</label>
+        <textarea placeholder="Fale sobre sua empresa"></textarea><br><br>
+    </div>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+</main>
+
+<script>
+    const input = document.getElementById("logoInput");
+    const preview = document.getElementById("previewLogo");
+
+    input.addEventListener("change", function () {
+        const file = this.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = "block";
+            }
+
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+</body>
+
+</html>
