@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="paginaLogin.css">
+    <title>Login - Patos Caravana</title>
+</head>
+<body>
+
+    <header>
+        <div class="titulo">
+
+            <h1>Patos Caravana</h1>
+
+        </div>
+
+    </header>
+
+    <div class="slogan">
+        <h2 class="subtitulo">
+            Conectando clientes e comerciantes em um só lugar
+        </h2>
+    </div>
+
+    <main>
+
+        <div class="container">
+
+            <section class="card">
+
+                <h3 class="cardTitulo">Entrar na Plataforma</h3>
+
+                <form class="formulario">
+
+                    <div class="campo">
+                        <label for="email">E-mail</label><br>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div class="campo">
+                        <label for="senha">Senha</label><br>
+                        <input 
+                            type="password" 
+                            id="senha" 
+                            name="senha" 
+                            placeholder="Digite sua senha"
+                            required
+                        >
+                    </div>
+
+                    <br>
+
+                    <div class="opcoes">
+                        <input 
+                            type="checkbox" 
+                            id="lembrar" 
+                            name="lembrar"
+                        >
+                        <label for="lembrar">Lembrar de mim</label>
+                    </div>
+
+                    <br>
+
+                    <div class="recuperarSenha">
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+
+                </form>
+                                    
+                <br>
+
+                <a href="../CLIENTE/paginaInicialCliente.html">
+
+                    <button class="fazerLogin" type="submit">
+                        Entrar
+                    </button>
+
+                </a>
+
+
+                <section class="cadastrarConta">
+
+                    <p class="cta">
+                        Ainda não possui uma conta?
+                    </p>
+
+                    <div class="botoes">
+
+                        <button type="button" class="cadastrarCliente" onclick="window.location.href='../CLIENTE/cadastroCliente.html'">
+
+                            Cadastrar-se como Cliente
+
+                        </button>
+
+                        <button type="button" class="cadastrarComerciante" onclick="window.location.href='../COMERCIANTE/cadastroComerciante.html'">
+
+                            Cadastrar-se como Comerciante
+                            
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
