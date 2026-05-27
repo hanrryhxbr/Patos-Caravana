@@ -186,7 +186,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 400px;
     gap: 32px;
-    align-items:first baseline;
+    align-items: first baseline;
 }
 
 .produtoEsquerda {
@@ -286,7 +286,8 @@ header {
     margin-top: 8px;
 }
 
-.carrinho, .chatComVendedor {
+.carrinho,
+.chatComVendedor {
     background: #F59E0B;
     border-left: 3px solid #0B132B;
     border-bottom: 3px solid #0B132B;
@@ -301,7 +302,8 @@ header {
     transition: transform 0.3s;
 }
 
-.carrinho:hover, .chatComVendedor:hover {
+.carrinho:hover,
+.chatComVendedor:hover {
     transform: scale(1.03);
 }
 
@@ -473,12 +475,95 @@ header {
     display: inline-block;
 }
 
+/* Avaliação */
+
+.comentarioAvaliacao {
+    padding-bottom: 64px;
+}
+
+.estrelasAvaliacaoBloco {
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+    margin-bottom: 16px;
+}
+
+.botaoEstrelaAvaliacao {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 32px;
+}
+
+.avaliacaoBloco {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+.avaliacaoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%
+}
+
+#textoComentarioAvaliacao {
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    border-radius: 8px;
+    border-right: 3px solid #F59E0B;
+    border-top: 3px solid #F59E0B;
+    border-bottom: 0;
+    border-left: 0;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    color: #0F766E;
+
+}
+
+.botaoEnviarAvaliacao {
+    width: auto;
+    background: #F59E0B;
+    border-left: 3px solid #0B132B;
+    border-bottom: 3px solid #0B132B;
+    border-top: none;
+    border-right: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    transition: transform 0.3s;
+}
+
+.botaoEnviarAvaliacao:hover {
+    transform: scale(1.03);
+}
+
+.mediaAvaliacoes {
+    margin-left: auto;
+    margin-right: 24px;
+    font-size: 34px;
+}
+
+.comentarioAvaliacao .comentariosHeaderContainer {
+    margin: 0 auto;
+}
+
 /* Comentários */
 .comentarios {
     padding: 32px 16px 80px;
 }
 
 .comentariosHeaderContainer {
+    display: flex;
+    align-items: end;
     width: 1280px;
     margin: 0 auto 24px;
 }
@@ -491,7 +576,12 @@ header {
 
 .categoriasComentarioBloco {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+}
+
+#botoesCategoria {
+    display: flex;
+    gap: 16px;
 }
 
 .botaoComentario {
@@ -529,7 +619,7 @@ header {
     border-left: 3px solid #F59E0B;
     border-bottom: 3px solid #F59E0B;
     border-radius: 8px;
-    padding: 20px;
+    padding: 24px;
 }
 
 .comentarioHeader {
@@ -566,5 +656,5 @@ header {
     margin: 0;
     color: white;
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 16px;
 }

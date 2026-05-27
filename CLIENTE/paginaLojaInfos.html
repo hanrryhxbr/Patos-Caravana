@@ -63,10 +63,7 @@
 
                     <span class="buscaIcone">🔍</span>
 
-                    <input 
-                        type="text" 
-                        placeholder="Busque alguma loja ou produto..."
-                    >
+                    <input type="text" placeholder="Busque alguma loja ou produto...">
 
                 </div>
 
@@ -197,7 +194,7 @@
                             </span>
 
                             <span class="localizacaoLoja">
-                                📍  Av. Principal • 1.5 km
+                                📍 Av. Principal • 1.5 km
                             </span>
                             <span class="avaliacaoLoja">
                                 ⭐ 4.6 de avaliação
@@ -421,27 +418,45 @@
 
     <section class="comentarios">
 
-        <div class="comentariosHeaderContainer">
-
-            <h3 class="comentariosTitulo">
-                Avaliações da loja
-            </h3>
-
-            <div class="categoriasComentarioBloco">
-
-                <button class="botaoComentario ativo">
-                    Todos
-                </button>
-
-                <button class="botaoComentario">
-                    Positivos
-                </button>
-
-                <button class="botaoComentario">
-                    Negativos
-                </button>
-
+        <article class="comentarioAvaliacao">
+            <div class="comentariosHeaderContainer">
+                <h3 class="comentariosTitulo">Deixe seu comentário sobre a loja</h3>
             </div>
+
+            <div class="comentariosContainer">
+                <div class="comentarioCard">
+                    <div class="estrelasAvaliacaoBloco">
+                        <button class="botaoEstrelaAvaliacao">⭐</button>
+                        <button class="botaoEstrelaAvaliacao">⭐</button>
+                        <button class="botaoEstrelaAvaliacao">⭐</button>
+                        <button class="botaoEstrelaAvaliacao">⭐</button>
+                        <button class="botaoEstrelaAvaliacao">⭐</button>
+                    </div>
+
+                    <div class="avaliacaoContainer">
+                        <textarea name="avaliacaoUsuario" id="textoComentarioAvaliacao"
+                            placeholder="A loja me satisfez..."></textarea>
+                        <button class="botaoEnviarAvaliacao">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="comentariosHeaderContainer">
+            <div class="categoriasComentarioBloco">
+                <h3 class="comentariosTitulo">Alguns comentários sobre a loja</h3>
+
+                <span id="botoesCategoria">
+                    <button class="botaoComentario ativo">Todos</button>
+                    <button class="botaoComentario">Positivos</button>
+                    <button class="botaoComentario">Negativos</button>
+                </span>
+            </div>
+
+            <span class="mediaAvaliacoes">
+                <span id="estrelaMediaAvalicao">⭐</span>
+                <span id="numeroMediaAvaliacao">4,5</span>
+            </span>
 
         </div>
 
